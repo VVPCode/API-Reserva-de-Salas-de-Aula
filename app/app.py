@@ -1,7 +1,7 @@
 from flask import Flask
-from app.config import Config
-from app.database import db
-from app.controllers.reserva_controller import reserva_bp
+from config import Config
+from database import db
+from controllers.reserva_controller import reserva_bp
 from flask_sqlalchemy import SQLAlchemy
 
 def create_app():
