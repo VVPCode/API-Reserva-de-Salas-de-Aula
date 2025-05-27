@@ -1,0 +1,13 @@
+version: '3'
+services:
+  reserva:
+    build: .
+    ports:
+      - "5002:5000"
+    depends_on:
+      - api-gerenciamento
+
+  api-gerenciamento:
+    build: ./api_gerenciamento
+    ports:
+      - "5000:5000"
