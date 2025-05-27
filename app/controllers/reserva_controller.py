@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
-from app.models.reserva import Reserva
-from app.database import db
+from models.reserva import Reserva
+from database import db
 import requests
 
 reserva_bp = Blueprint('reserva_bp', __name__)

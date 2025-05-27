@@ -1,7 +1,6 @@
 from flask import Flask
-from app.config import Config
-from app.database import db
-from app.controllers.reserva_controller import reserva_bp
+from config import Config
+from database import db
 from flask_sqlalchemy import SQLAlchemy
 
 def create_app():
@@ -13,7 +12,9 @@ def create_app():
     with app.app_context():
         db.create_all()
 
-    app.register_blueprint(reserva_bp)
+        # Importações locais para evitar circular imports
+        from controllers.reserva_controller import reserva_bp
+        app.register_blueprint(reserva_bp)
 
     @app.route('/')
     def home():
