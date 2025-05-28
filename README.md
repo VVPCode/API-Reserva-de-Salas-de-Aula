@@ -179,10 +179,6 @@ docker run -d -p 5001:5000 --name reserva api-reserva-salas
 
 ---
 
-## 🧑‍💻 Autor
+## 📄 Licença
 
-- Feito por [Seu Nome] 🚀
-- Linkedin: [Seu Linkedin](https://linkedin.com/in/seu-usuario)
-- GitHub: [Seu GitHub](https://github.com/seu-usuario)
-
----
+Este projeto é livre para uso educacional.
